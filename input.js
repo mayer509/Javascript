@@ -11,6 +11,8 @@ export default class inputHandler {
           paddle.moveRight();
 
           break;
+
+        //no default
       }
     });
   }
