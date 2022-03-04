@@ -8,7 +8,6 @@ const GAME_WIDTH = 800;
 const GAME_HEIGHT = 600;
 
 let paddle = new Paddle(GAME_WIDTH, GAME_HEIGHT);
-ctx.clearRect(0, 0, 800, 600);
 
 new inputHandler(paddle);
 
@@ -22,6 +21,7 @@ function gameLoop(timeStamp) {
 
   paddle.update(deltaTime);
   paddle.draw(ctx);
+  ctx.clearRect(0, 0, 800, 600);
 
   requestAnimationFrame(gameLoop);
 }
